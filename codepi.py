@@ -96,6 +96,7 @@ def delete_old_pictures(folder_path):
         return None, None
 while True:
     # Get the paths of the latest and second latest images
+    take_photo()
     latest_image_path, second_latest_image_path = delete_old_pictures(FOLDER_PATH)
 
     if latest_image_path and second_latest_image_path:  # Check if paths are valid
